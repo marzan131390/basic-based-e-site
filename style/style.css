@@ -1,0 +1,37 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+#header {
+    margin: 0px 5%;
+}
+nav ul {
+    margin-top: 12px;
+    display: flex;
+    justify-content: space-between;
+}
+#nav-items li {
+    margin-right: 20px;
+    padding-top: 10px;
+}
+#nav-items li a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 20px;
+    font-weight: 900;
+    padding: 7px 7px;
+    border-bottom: 2px solid #4BA87D;
+}
+.custom-btn {
+    background-color: #4BA87D;
+    border: none;
+    font-size: 16px;
+    padding: 15px 20px;
+    color: #fff;
+    border-radius: 15px;
+}
+.nav-btn {
+    margin-right: 20px;
+
+}
