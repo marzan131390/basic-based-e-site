@@ -35,3 +35,79 @@ nav ul {
     margin-right: 20px;
 
 }
+.container{
+    margin: 50px 5%;
+}
+#header-bottom-text {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+#header-bottom-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+#header-bottom-text h1 {
+    font-size: 50px;
+    font-weight: 800;
+}
+#header-bottom-text p {
+    font-size: 23px;
+    padding: 5px 0px;
+    margin: 11px 0px;
+}
+.blank-bg-btn {
+    background-color: #fff;
+    border: 1px solid #4BA87D;
+    font-size: 16px;
+    padding: 15px 20px;
+    color: #4BA87D;
+    border-radius: 15px;
+}
+.blank-bg-btn:hover { 
+    background-color: #4BA87D;
+    border: 1px solid #4BA87D;
+    font-size: 16px;
+    padding: 15px 20px;
+    color: #fff;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.custom-btn:hover {
+    background-color: #fff;
+    border: 1px solid #4BA87D;
+    font-size: 16px;
+    padding: 15px 19px;
+    color: #4BA87D;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.demo-btn {
+    margin-left: 20px;
+}
+#header-bottom-img {
+    padding: 30px;
+}
+.container-fluid {
+    margin: 40px 0px;
+    background-color: #F7F7F7;
+    padding: 70px 15%;
+}
+#video-section {
+    background: url("../images/recharge.jpg") no-repeat center;
+    height: 600px;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+}
+#video-section div {
+    text-align: center;
+}
+#video-section div h2  {
+    font-size: 50px;
+    color: rgba(255, 255, 255, .9);
+    margin-bottom: 12px;
+}
