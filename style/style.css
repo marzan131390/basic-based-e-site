@@ -2,6 +2,10 @@
     padding: 0;
     margin: 0;
     list-style-type: none;
+    
+}
+a{
+    text-decoration: none;
 }
 #header {
     margin: 0px 5%;
@@ -58,7 +62,7 @@ nav ul {
     margin: 11px 0px;
 }
 .blank-bg-btn {
-    background-color: #fff;
+    background-color: rgba(247, 247, 247, .9);
     border: 1px solid #4BA87D;
     font-size: 16px;
     padding: 15px 20px;
@@ -90,7 +94,6 @@ nav ul {
     padding: 30px;
 }
 .container-fluid {
-    margin: 40px 0px;
     background-color: #F7F7F7;
     padding: 70px 15%;
 }
@@ -110,4 +113,39 @@ nav ul {
     font-size: 50px;
     color: rgba(255, 255, 255, .9);
     margin-bottom: 12px;
+}
+#services-section {
+    background-color: #CAEAC7;
+    padding: 50px 0px;
+}
+#services-section h3 {
+    text-align: center;
+    font-size: 66px;
+    font-weight: 900;
+}
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin: 60px 18%;
+    
+}
+.card-section  { 
+    background-color: #F7F7F7;
+    border-radius: 10px;
+    box-shadow: 5px 5px 14px gray;
+}
+.card-content {
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.card-section p { 
+    font-size: 18px;
+    padding: 23px 0 25px 30px;
+}
+.learn-more  {
+    font-size: 21px;
+    color: #127144;
+    font-weight: 900;
+    padding-left: 30px;
 }
