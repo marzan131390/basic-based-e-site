@@ -10,7 +10,7 @@ a{
 #header {
     margin: 0px 5%;
 }
-nav ul {
+nav ul, #nav-items {
     margin-top: 12px;
     display: flex;
     justify-content: space-between;
@@ -45,11 +45,6 @@ nav ul {
 #header-bottom-text {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-}
-#header-bottom-text {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     padding: 10px;
 }
 #header-bottom-text h1 {
@@ -92,6 +87,9 @@ nav ul {
 }
 #header-bottom-img {
     padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .container-fluid {
     background-color: #F7F7F7;
@@ -128,7 +126,6 @@ nav ul {
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
     margin: 60px 18%;
-    
 }
 .card-section  { 
     background-color: #F7F7F7;
@@ -198,7 +195,7 @@ nav ul {
     font-size: 50px;
     font-weight: 800;
 }
-#input-section input {
+#input-container input {
     padding: 10px;
     box-shadow: none;
     border: 2px solid lightgray;
@@ -207,7 +204,7 @@ nav ul {
     border-radius: 10px;
     width: 50%;
 }
-#input-section button {
+#input-container button {
     border: 2px solid #4BA87D;
 }
 #input-section p {
@@ -270,4 +267,82 @@ footer {
     font-size: 15px;
     color: rgba(0, 0, 0, .9);
     font-weight: 900;
+}
+#toggle-icon{
+    background-color: #127144;
+    width: 3rem;
+    height: 3rem;
+    display: none;
+}
+
+/* Styles for 1100px size device... */
+@media(max-width: 1000px){
+    #nav-items{
+        display: none;
+       
+    }
+    #nav-items li{
+        display: flex;
+    }
+    #nav-items button{
+        margin-top: 1.4rem;
+    }
+    #toggle-icon{
+        display: block;
+        cursor: pointer;
+    }
+    #header-bottom-text,.members-info{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .cards{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .card-content img, #header-bottom-img img{
+        width: 70%;
+    }
+    .card-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #input-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #input-container button{
+        margin-top: 3rem;
+    }
+    .brands{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media(max-width: 750px){
+    .footer-links-section{
+        grid-template-columns: 2fr repeat(2, 1fr);
+    }
+    #header-bottom-img img{
+        width: 100%;
+    }
+}
+@media (max-width: 650px){
+    #input-container{
+        display: flex;
+        flex-direction: column;
+    }
+    #input-container button{
+        margin-top: 1rem;
+    }
+    #footer-content{
+        flex-direction: column;
+        gap: 4vh;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media(max-width: 500px){
+    .footer-links-section{
+        grid-template-columns: 2fr repeat(1, 1fr);
+    }
 }
