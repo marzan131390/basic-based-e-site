@@ -269,7 +269,7 @@ footer {
     font-weight: 900;
 }
 #toggle-icon{
-    background-color: #127144;
+    background-color: #127144; 
     width: 3rem;
     height: 3rem;
     display: none;
@@ -277,12 +277,17 @@ footer {
 
 /* Styles for 1100px size device... */
 @media(max-width: 1000px){
-    #nav-items{
-        display: none;
-       
+    .responsive-display{
+        opacity: 0;
     }
-    #nav-items li{
-        display: flex;
+    #nav-items{
+        margin-top: 15%;
+        gap: 4vh;
+        flex-direction: column;
+        transition: all 3s ease-in-out;
+    }
+    .opacity{
+        opacity: 1;
     }
     #nav-items button{
         margin-top: 1.4rem;
@@ -290,6 +295,8 @@ footer {
     #toggle-icon{
         display: block;
         cursor: pointer;
+        float: right;
+        margin-top: 1.2rem;
     }
     #header-bottom-text,.members-info{
         grid-template-columns: repeat(1, 1fr);
