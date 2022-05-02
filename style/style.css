@@ -277,17 +277,28 @@ footer {
 
 /* Styles for 1100px size device... */
 @media(max-width: 1000px){
-    .responsive-display{
-        opacity: 0;
-    }
     #nav-items{
         margin-top: 15%;
-        gap: 4vh;
         flex-direction: column;
-        transition: all 3s ease-in-out;
+        gap: 2vh;
+        transition: all 1s ease-in-out;
+    }
+    .nav-content{
+        transition: all 2s ease;
+        height: 10vh;
+    }
+    .rs-nav-content-height{
+        height: 40vh;
+    }
+    .responsive-display{
+        opacity: 0;
+        position: absolute;
+        right: -9999px;
     }
     .opacity{
         opacity: 1;
+        right: 6rem;
+        top: -3rem;
     }
     #nav-items button{
         margin-top: 1.4rem;
@@ -324,6 +335,10 @@ footer {
     .brands{
         grid-template-columns: repeat(2, 1fr);
     }
+    .member1, .member2, .member3{
+        background-position: inherit;
+        background-size: cover;
+    }
 }
 @media(max-width: 750px){
     .footer-links-section{
@@ -331,6 +346,14 @@ footer {
     }
     #header-bottom-img img{
         width: 100%;
+    }
+    .opacity{
+        right: 4rem;
+        top: -1rem;
+        
+    }
+    .member1, .member2, .member3{
+        background-position: center;
     }
 }
 @media (max-width: 650px){

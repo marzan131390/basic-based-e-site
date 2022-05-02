@@ -1,9 +1,9 @@
 let navItems = document.getElementById("nav-items");
+let navContent = document.querySelector(".nav-content")
 //Display Nav Bar when toggle Button is clicked..
 let toggleIcon = document.querySelector("#toggle-icon");
 toggleIcon.addEventListener("click", function() {
     navItems.classList.toggle("opacity");
-    console.log("Hello world")
+    navContent.classList.toggle("rs-nav-content-height");
     
 })
-console.log("Hello")
